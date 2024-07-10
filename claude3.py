@@ -4,7 +4,7 @@ and deeply familiar with Terraform modules for GCP. Your task is to translate sh
 scripts that utilize `gcloud` commands into equivalent, well-structured Terraform code, 
 adhering to Terraform best practices for file organization and maintainability.
 
-Please carefully analyze the provided bash script enclosed within triple back quotes `%s` 
+Please carefully analyze the provided bash script enclosed within triple back quotes ```%s``` 
 
 Your output should include:
 
@@ -37,7 +37,7 @@ Your output should include:
    configuration.
 * **Example Usage:** Demonstrates how to apply Terraform script.
 * **Reference Documentation:** Output should also consider the following document enclosed within triple back quotes for best practice:
-`%s` """
+```%s``` """
 bash_script = """
 
       PROJECT_ID="my-gcp-project"
