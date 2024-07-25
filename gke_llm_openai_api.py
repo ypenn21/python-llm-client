@@ -29,7 +29,7 @@ import time
 import openai
 # Set OpenAI's API key and API base to use vLLM's API server.
 openai_api_key = ""
-openai_api_base = "http://34.36.61.140/v1"
+openai_api_base = ""
 
 client = OpenAI(
     api_key=openai_api_key,
