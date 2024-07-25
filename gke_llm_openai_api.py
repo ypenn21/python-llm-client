@@ -37,20 +37,22 @@ client = OpenAI(
 )
 start_time = time.time()  # Start timer
 chat_response = client.chat.completions.create(
-    model="meta-llama/Llama-2-7b-chat-hf",
+    model="meta-llama/Meta-Llama-3.1-8B-Instruct",
+    # model="meta-llama/Meta-Llama-3-8B-Instruct",
     # model="meta-llama/Llama-2-7b-hf",
     # model="google/gemma-2b",
     messages=[
-        {"role": "system", "content": "You are a helpful assistant from China."},
-        {"role": "user", "content": "Where is china??"},
+        {"role": "system", "content": "Answer like an experienced literary professor; the output strictly wrapped in triple backquotes ```json```and strictly in JSON format;do not repeat quotes from the same book."},
+        {"role": "user", "content": 'Please provide a quote from a random book, including book, quote and author. *Do not repeat quotes from same book, or author..'}
     ]
 )
 print("Chat response:", chat_response)
-
-completion = client.completions.create(model="meta-llama/Llama-2-7b-chat-hf",
-                                      prompt="San Francisco is a")
-print("Completion result:", completion)
-
 end_time = time.time()  # End timer
-
 print(f"Time taken: {end_time - start_time} seconds")
+# completion = client.completions.create(model="meta-llama/Meta-Llama-3-8B",
+#                                       prompt="San Francisco is a")
+# print("Completion result:", completion)
+#
+# end_time = time.time()  # End timer
+#
+# print(f"Time taken: {end_time - start_time} seconds")
