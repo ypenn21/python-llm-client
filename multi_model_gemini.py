@@ -12,5 +12,5 @@ image_file = Part.from_uri(
 )
 
 # Query the model
-response = model.generate_content([image_file, "I want you to be an expert gcp architect. Please parse the architecture diagram presented here. Describe the architecture and the flow. Generate infrastructure as code for terraform."])
+response = model.generate_content([image_file, "I want you to be an expert gcp architect. Please parse the architecture diagram presented here. Describe the architecture and the flow. Thereafter generate infrastructure as code for terraform."])
 print(response.text)
