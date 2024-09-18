@@ -42,7 +42,7 @@ Cloud Run packages the generated text and sends it to the App Frontend.
 The App Frontend displays the generated text to users.
 The entire process is monitored and logged for debugging and performance analysis.
 Terraform Infrastructure as Code
-
+```
 # Create a Google Cloud Storage bucket
 resource "google_storage_bucket" "main" {
   name = "image-bucket"
@@ -132,6 +132,7 @@ resource "google_cloud_run_v2_service" "app_frontend" {
     timeout_seconds = 120
   }
 }
+```
 This Terraform code defines the core infrastructure components of the architecture. However, it does not include the specific logic for image ingestion, text generation, and application frontend. These would typically be implemented within the Docker containers for each Cloud Run service and the Cloud Function.
 
 To complete the infrastructure, you would:
