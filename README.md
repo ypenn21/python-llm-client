@@ -1,9 +1,11 @@
+
+Prompt:
 I want you to be an expert gcp architect. Please parse the architecture diagram presented here. Describe the architecture and the flow. Generate infrastructure as code for terraform.
 
 ![Architecture Diagram](image/gcp-architecture.png)
 
 
-AI
+Gemini Response:
 This architecture diagram depicts a Google Cloud platform solution for processing images and generating text from them using a large language model (LLM) such as Gemini.
 
 Here's a breakdown of the architecture:
